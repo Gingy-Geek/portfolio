@@ -6,6 +6,11 @@ const WorkExp = () => {
   const { user } = useAppContext();
   const { t } = useTranslation("common");
   const workSection = user.sections.find((sec) => sec.id === "workExp");
+  const getWorkType = (workType: string) =>{
+    if(workType == "Remote") return "form.workType.remote"
+    else if(workType == "Office") return "form.workType.office"
+    else return "form.workType.hybrid"
+  }
   if (!workSection) return null;
 
   const items = workSection.data;
@@ -52,7 +57,7 @@ const WorkExp = () => {
                       </p>
 
                       <p className="mb-2 text-gray-500 dark:text-gray-400 font-medium">
-                        {item.workType}
+                        {t(getWorkType(item.workType))}
                       </p>
 
                       <p className="text-gray-500 dark:text-gray-400">

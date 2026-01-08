@@ -23,6 +23,7 @@ export const metadata: Metadata = {
   description: "Portfolio personal interactivo desarrollado con Next.js y React",
 };
 
+
 export default function RootLayout({
   children,
 }: {

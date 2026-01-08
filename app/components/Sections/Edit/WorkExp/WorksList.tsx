@@ -67,7 +67,11 @@ const WorksList: React.FC<Props> = ({
       },
     })
   );
-
+  const getWorkType = (workType: string) => {
+    if (workType == "Remote") return "form.workType.remote";
+    else if (workType == "Office") return "form.workType.office";
+    else return "form.workType.hybrid";
+  };
   const handleDragEnd = (event: DragEndEvent) => {
     const { active, over } = event;
     if (!over || active.id === over.id) return;
@@ -82,7 +86,9 @@ const WorksList: React.FC<Props> = ({
 
   return (
     <dd className="text-sm leading-relaxed px-2">
-      <h6 className="text-gray-600 dark:text-gray-400">{t("section.workExperience.title")}</h6>
+      <h6 className="text-gray-600 dark:text-gray-400">
+        {t("section.workExperience.title")}
+      </h6>
 
       <div className="flex flex-col gap-4 mt-2">
         <DndContext
@@ -101,7 +107,9 @@ const WorksList: React.FC<Props> = ({
             >
               {items.map((item: any) => {
                 const start = item.start?.replace("-", "/");
-                const end = item.end ? item.end.replace("-", "/") : t("section.workExperience.present");
+                const end = item.end
+                  ? item.end.replace("-", "/")
+                  : t("section.workExperience.present");
 
                 return (
                   <SortableItem key={item.id} item={item}>
@@ -131,7 +139,7 @@ const WorksList: React.FC<Props> = ({
                             </p>
 
                             <p className="mb-2 text-gray-500 dark:text-gray-400 font-medium">
-                              {item.workType}
+                              {t(getWorkType(item.workType))}
                             </p>
 
                             <p className="text-gray-500 dark:text-gray-400">
