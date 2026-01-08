@@ -1,0 +1,169 @@
+{
+  "actions": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "close": "Cerrar",
+    "continue": "Seguir editando",
+    "exit": "Salir sin guardar",
+    "add": "Agregar",
+    "chooseIcon": "Elegir icono",
+    "chooseCover": "Elegir portada",
+    "chooseImage": "Elegir imagen"
+  },
+  "form": {
+    "errors": {
+      "name": "El nombre es obligatorio",
+      "title": "El título es obligatorio",
+      "description": "La descripción es obligatoria",
+      "year": "El año es obligatorio",
+      "link": "El link es obligatorio",
+      "email": "El email es obligatorio",
+      "image": "La imagen es obligatoria",
+      "workType": "El tipo de trabajo es obligatorio",
+      "socialMedia": "La Social media es obligatoria"
+    },
+    "title": "Titulo",
+    "subtitle": "Subtitulo",
+    "description": "Descripción",
+    "placeHolderDesc": "Descripción detallada sobre tu proyecto",
+    "year": "Año",
+    "link": "Enlace",
+    "email": "Email",
+    "tools": "Herramientas",
+    "startYear": "Año de inicio",
+    "endYear": "Año de fin",
+    "workType": {
+      "title": "Tipo de trabajo",
+      "select": "Seleccionar tipo de trabajo",
+      "remote": "Remoto",
+      "office": "Presencial",
+      "hybrid": "Híbrido"
+    },
+    "socialMedia": {
+      "title": "Redes sociales",
+      "mediaName": "Nombre de la red",
+      "other": "Otro",
+      "userName": "Nombre de usuario (opcional)",
+      "placeholder": {
+        "autofil": "Autocompletado",
+        "enterName": "Ingresar nombre de la red"
+      }
+    }
+  },
+  "status": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "noData": "Sin datos"
+  },
+  "navbar": {
+    "about": "Sobre mi",
+    "projects": "Proyectos",
+    "workExperience": "Experiencia Laboral",
+    "connect": "Conexiones"
+  },
+  "editMode": {
+    "info": "Este portfolio es completamente interactivo. Cada sección, proyecto y dato personal puede editarse al activar el modo edición. Podés actualizar mi nombre, foto, subtítulo, agregar o modificar proyectos, incluir herramientas utilizadas y descripciones detalladas, todo en tiempo real para mostrar la funcionalidad de la interfaz.",
+    "title": "Modo edición",
+    "true": "Edición activada",
+    "false": "Edición desactivada",
+    "saved": "Cambios guardados",
+    "notSaved": "Sin cambios",
+    "modal": {
+      "title": "Cambios sin guardar",
+      "subtitle": "Tenés cambios pendientes que no se han guardado. ¿Estás seguro de que querés salir sin guardar?"
+    }
+  },
+  "slug": {
+    "back": "Volver a inicio",
+    "title": "Proyecto",
+    "button": "Ver proyecto en vivo",
+    "database": "Base de datos",
+    "error": {
+      "title": "Proyecto no encontrado",
+      "subtitle": "El proyecto que estás buscando no existe o fue eliminado"
+    }
+  },
+  "section": {
+    "hideToggle": {
+      "hide": "Ocultar sección",
+      "show": "Mostrar sección"
+    },
+    "profile": {
+      "modal": {
+        "title": "Editar perfil",
+        "placeHolderName": "Nombre",
+        "placeHolderSubtitle": "Subtítulo"
+      },
+      "notify": {
+        "saved": "Perfil editado"
+      }
+    },
+    "about": {
+      "notify": {
+        "visible": "Sección 'Sobre mi' visible",
+        "noVisible": "Sección 'Sobre mi' oculta"
+      }
+    },
+    "projects": {
+      "types": {
+        "all": "Todo",
+        "links": "Links",
+        "artwork": "Obras"
+      },
+      "notify": {
+        "visible": "Sección 'Proyectos' visible",
+        "noVisible": "Sección 'Proyectos' oculta",
+        "added": "Proyecto agregado correctamente",
+        "edited": "Proyecto editado correctamente",
+        "deleted": "Proyecto borrado correctamente"
+      },
+      "links": {
+        "addModal": "Agregar nuevo proyecto",
+        "editModal": "Editar proyecto",
+        "deleteModal": "Borrar proyecto",
+        "subtitleDeleteModal": "¿Estas seguro que quieres borrar este proyecto?"
+      },
+      "artwork": {
+        "addModal": "Agregar nueva obra",
+        "editModal": "Editar obra",
+        "deleteModal": "Borrar obra",
+        "subtitleDeleteModal": "¿Estas seguro que quieres borrar esta obra?",
+        "galleryTitle": "Galería"
+      }
+    },
+    "workExperience": {
+      "notify": {
+        "visible": "Sección 'Experiencia laboral' visible",
+        "noVisible": "Sección 'Experiencia laboral' oculta",
+        "added": "Experiencia laboral agregada correctamente",
+        "edited": "Experiencia laboral editada correctamente",
+        "deleted": "Experiencia laboral borrada correctamente"
+      },
+      "title": "Trabajos",
+      "present": "Presente",
+      "modal": {
+        "addModal": "Agregar nueva experiencia laboral",
+        "editModal": "Editar experiencia laboral",
+        "deleteModal": "Eliminar trabajo",
+        "subtitleDeleteModal": "¿Estás seguro de que quieres eliminar este trabajo?"
+      }
+    },
+    "connect": {
+      "notify": {
+        "visible": "Sección 'Conexiones' visible",
+        "noVisible": "Sección 'Conexiones' oculta",
+        "added": "Conexion agregada correctamente",
+        "edited": "Conexion editada correctamente",
+        "deleted": "Conexion borrada correctamente"
+      },
+      "title": "Conexiones",
+      "modal": {
+        "addModal": "Agregar nueva conexión",
+        "editModal": "Editar conexión",
+        "deleteModal": "Eliminar conexión",
+        "subtitleDeleteModal": "¿Estás seguro de que quieres eliminar esta conexión?"
+      }
+    }
+  }
+}

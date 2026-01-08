@@ -1,0 +1,170 @@
+{
+  "actions": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "close": "Close",
+    "continue": "Continue editing",
+    "exit": "Exit without saving",
+    "add": "Add",
+    "chooseIcon": "Choose icon",
+    "chooseCover": "Choose cover",
+    "chooseImage": "Choose Image"
+  },
+  "form": {
+    "errors": {
+      "name": "Name is required",
+      "title": "Title is required",
+      "description": "Description is required",
+      "year": "Year is required",
+      "link": "Link is required",
+      "email": "Email is required",
+      "image": "Image is required",
+      "workType": "Work type is required",
+      "socialMedia": "Social media name is required"
+    },
+    "title": "Title",
+    "subtitle": "Subtitle",
+    "description": "Description",
+    "placeHolderDesc": "Detailed description about your project",
+    "year": "Year",
+    "link": "Link",
+    "email": "Email",
+    "tools": "Tools",
+    "startYear": "Start year",
+    "endYear": "End year",
+    "workType": {
+      "title": "Work type",
+      "select": "Select work type",
+      "remote": "Remote",
+      "office": "Office",
+      "hybrid": "Hybrid"
+    },
+    "socialMedia":{
+      "title": "Social media",
+      "mediaName": "Media name",
+      "other": "Other",
+      "userName":"User name (optional)",
+      "placeholder":{
+        "autofil": "Autofilled",
+        "enterName": "Enter media name"
+      }
+    }
+  },
+
+  "status": {
+    "loading": "Loading...",
+    "error": "Error",
+    "noData": "No data"
+  },
+  "navbar": {
+    "about": "About",
+    "projects": "Projects",
+    "workExperience": "Work Experience",
+    "connect": "Connect"
+  },
+  "editMode": {
+    "info": "This portfolio is fully interactive. Each section, project, and personal detail can be edited when edit mode is activated. You can update my name, photo, subtitle, add or modify projects, include tools used, and detailed descriptions, all in real time to showcase the interface functionality.",
+    "title": "Edit Mode",
+    "true": "Editing enabled",
+    "false": "Editing disabled",
+    "saved": "Changes saved",
+    "notSaved": "No changes",
+    "modal": {
+      "title": "Unsaved changes",
+      "subtitle": "You have pending changes that have not been saved. Are you sure you want to exit without saving?"
+    }
+  },
+  "slug": {
+    "back": "Back to home",
+    "title": "Project",
+    "button": "View live project",
+    "database": "Database",
+    "error": {
+      "title": "Project not found",
+      "subtitle": "The project you are looking for does not exist or has been removed."
+    }
+  },
+  "section": {
+    "hideToggle": {
+      "hide": "Hide section",
+      "show": "Show section"
+    },
+    "profile": {
+      "modal": {
+        "title": "Edit profile",
+        "placeHolderName": "Name",
+        "placeHolderSubtitle": "Subtitle"
+      },
+      "notify": {
+        "saved": "Profile updated"
+      }
+    },
+    "about": {
+      "notify": {
+        "visible": "Section 'About me' visible",
+        "noVisible": "Section 'About me' hidden"
+      }
+    },
+    "projects": {
+      "types": {
+        "all": "All",
+        "links": "Links",
+        "artwork": "Artwork"
+      },
+      "notify": {
+        "visible": "Section 'Projects' visible",
+        "noVisible": "Section 'Projects' hidden",
+        "added": "Project added successfully",
+        "edited": "Project edited successfully",
+        "deleted": "Project deleted successfully"
+      },
+      "links": {
+        "addModal": "Add new project",
+        "editModal": "Edit Project",
+        "deleteModal": "Delete project",
+        "subtitleDeleteModal": "Are you sure you want to delete this project?"
+      },
+      "artwork": {
+        "addModal": "Add new artwork",
+        "editModal": "Edit artwork",
+        "deleteModal": "Delete artwork",
+        "subtitleDeleteModal": "Are you sure you want to delete this artwork?",
+        "galleryTitle": "Gallery"
+      }
+    },
+    "workExperience": {
+      "notify": {
+        "visible": "Section 'Work Experience' visible",
+        "noVisible": "Section 'Work Experience' hidden",
+        "added": "Work Experience added successfully",
+        "edited": "Work Experience edited successfully",
+        "deleted": "Work Experience deleted successfully"
+      },
+      "title": "Works",
+      "present": "Present",
+      "modal": {
+        "addModal": "Add new Work experience",
+        "editModal": "Edit Work experience",
+        "deleteModal": "Delete work",
+        "subtitleDeleteModal": "Are you sure you want to delete this work?"
+      }
+    },
+    "connect": {
+      "notify": {
+        "visible": "Section 'Connect' visible",
+        "noVisible": "Section 'Connect' hidden",
+        "added": "Connect added successfully",
+        "edited": "Connect edited successfully",
+        "deleted": "Connect deleted successfully"
+      },
+      "title": "Connections",
+      "modal": {
+        "addModal": "Add new connection",
+        "editModal": "Edit connection",
+        "deleteModal": "Delete connection",
+        "subtitleDeleteModal": "Are you sure you want to delete this connection?"
+      }
+    }
+  }
+}
