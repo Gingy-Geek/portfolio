@@ -4,6 +4,7 @@ import { useAppContext } from "@/context/AppContext";
 import { Pencil } from "lucide-react";
 import { useState } from "react";
 import HeaderEditModal from "./HeaderEditModal";
+import Avatar from "react-avatar";
 
 export default function HeaderProfile() {
   const { tempUser } = useAppContext();
@@ -20,10 +21,12 @@ export default function HeaderProfile() {
           <Pencil className="w-4 h-4" />
         </button>
 
-        <img
+        <Avatar
+          name={tempUser.name}
           src={tempUser.avatar}
-          alt="Foto de perfil"
-          className="w-30 h-30 rounded-full shadow-md object-cover"
+          size="120"
+          round={true}
+          textSizeRatio={2}
         />
 
         <div className="text-center md:text-left">

@@ -3,16 +3,17 @@ import { Pencil } from "lucide-react";
 import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNotify } from "../notifications/NotificationProvider";
+import Avatar from "react-avatar";
 
 interface Props {
   onClose: () => void;
 }
 
 type UserProfile = {
-  avatar: string,
-  name: string,
-  subTitle:string
-}
+  avatar: string | undefined;
+  name: string;
+  subTitle: string;
+};
 
 //HACER QUE SEA COMO FORM Y QUENO EDITE EL TEMP USER A MENOS QUE APRETE SAVE!!!!!
 
@@ -21,9 +22,9 @@ export default function HeaderEditModal({ onClose }: Props) {
   const [form, setForm] = useState<UserProfile>({
     avatar: tempUser.avatar,
     name: tempUser.name,
-    subTitle:tempUser.subTitle
+    subTitle: tempUser.subTitle,
   });
-  
+
   const avatarInputRef = useRef<HTMLInputElement>(null);
   const [error, setError] = useState("");
   const { t } = useTranslation("common");
@@ -36,7 +37,7 @@ export default function HeaderEditModal({ onClose }: Props) {
     const reader = new FileReader();
     reader.onload = () => {
       if (reader.result) {
-         updateField("avatar", reader.result as string);
+        updateField("avatar", reader.result as string);
       }
     };
     reader.readAsDataURL(file);
@@ -47,22 +48,27 @@ export default function HeaderEditModal({ onClose }: Props) {
       setError(t("form.errors.name"));
       return;
     }
-    notify(t("section.profile.notify.saved"), "success")
-    setTempUserWithFlag({...tempUser, avatar:form.avatar, name:form.name, subTitle:form.subTitle});
+    notify(t("section.profile.notify.saved"), "success");
+    setTempUserWithFlag({
+      ...tempUser,
+      avatar: form.avatar,
+      name: form.name,
+      subTitle: form.subTitle,
+    });
     onClose();
   };
 
   const updateField = (field: keyof UserProfile, value: string) => {
-      setForm({
-        ...form,
-        [field]: value,
-      });
-  
-      // limpiar error al escribir
-      if (error != "") {
-        setError("");
-      }
-    };
+    setForm({
+      ...form,
+      [field]: value,
+    });
+
+    // limpiar error al escribir
+    if (error != "") {
+      setError("");
+    }
+  };
 
   return (
     <div
@@ -74,7 +80,9 @@ export default function HeaderEditModal({ onClose }: Props) {
         onClick={(e) => e.stopPropagation()}
       >
         {/* TITULO */}
-        <h3 className="text-lg font-semibold mb-4">{t("section.profile.modal.title")}</h3>
+        <h3 className="text-lg font-semibold mb-4">
+          {t("section.profile.modal.title")}
+        </h3>
 
         {/* AVATAR */}
         <div className="relative w-24 h-24 mx-auto">
@@ -83,9 +91,12 @@ export default function HeaderEditModal({ onClose }: Props) {
             onClick={() => avatarInputRef.current?.click()}
           >
             {form.avatar ? (
-              <img
+              <Avatar
+                name={form.name}
                 src={form.avatar}
-                className="w-full h-full object-cover"
+                size="120"
+                round={true}
+                textSizeRatio={2}
               />
             ) : (
               form.name.charAt(0).toUpperCase()
