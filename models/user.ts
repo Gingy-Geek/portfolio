@@ -111,7 +111,7 @@ export const exampleUser: User = {
             subtitle: "Portfolio web interactivo",
             description: "Este proyecto es mi portfolio personal desarrollado como una aplicación web interactiva. La idea principal no es solo mostrar información estática, sino permitir la edición y gestión de mi contenido directamente desde la interfaz: agregar, modificar o eliminar proyectos, secciones y datos personales. Incluye soporte para múltiples idiomas, modo claro/oscuro y una estructura modular que me permite actualizar el portfolio de forma flexible. El objetivo es mostrar mis trabajos mientras demuestro mis habilidades en desarrollo frontend, lógica de aplicación y construcción de interfaces dinámicas.",
             year: "2025",
-            link: "#",
+            link: "https://portfolio-personal-front.vercel.app/",
             cover: "/portf.png",
             tools: {
               frontend: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
@@ -224,3 +224,4 @@ export const exampleUser: User = {
     },
   ],
 };
+
