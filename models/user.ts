@@ -63,7 +63,7 @@ export interface User {
   id: string;
   name: string;
   subTitle: string;
-  avatar: string;
+  avatar: string | undefined;
   sections: Section<any>[];
 }
 
@@ -224,3 +224,4 @@ export const exampleUser: User = {
     },
   ],
 };
+
